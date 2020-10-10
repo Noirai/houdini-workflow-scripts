@@ -1,11 +1,13 @@
 # Author: Noirai
 
-# AUTO SPLIT, UV UNWRAP, UV LAYOUT with UDIM starting from 1001
+# AUTO SPLIT, UV UNWRAP, UV LAYOUT with UDIM starting from 1001, CREATE OC UNIVERSAL MATERIAL
 
-# Specify targeting geo node name
+# If you already have a geo with different components in groups
+# Set up an Object Merge or filecache and import your geo
+# Specify geo and merge node name below
 targetSubnetName = "targetGeo" 
+targetMergeNodeName = "object_merge1"
 
-# E.g 
 # Output FBX File Name: cube.fbx
 # Substance Painter preset: $mesh_$textureSet_channel
 # Substance texture output path: D:/textures/cube/
@@ -23,7 +25,7 @@ displacement = 0.001
 IOR = 1
 
 for childCount, childNet in enumerate(list(geo.children())):
-    if childNet.name() == "object_merge1":
+    if childNet.name() == targetMergeNodeName:
 
         groups = [g.name() for g in childNet.geometry().primGroups()]
         #print(childNet.geometry().primGroups())
