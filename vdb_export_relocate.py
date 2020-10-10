@@ -1,3 +1,6 @@
+# Author: Noirai
+
+
 # Export geo components after VDB'd in Houdini
 # Retopo / Sculpt / Do whatever you want with any other apps (ZB Decimating Master, Maya etc.)
 # Import back with a match size node to relocate

@@ -1,8 +1,10 @@
+# Author: Noirai
+
 import hashlib
 
 # read every texture in every shopnets in every node in your project
 # find duplicated textures with MD5 calculation
-# point to same texture to (theoretically prevent load the same texture with different name into VRAM multiple times)
+# point to same texture to (theoretically prevent loading the same texture with different name into VRAM multiple times)
 # Currently OCTANE ONLY
 
 textureObjArray = {}
