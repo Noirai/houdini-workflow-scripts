@@ -14,7 +14,7 @@ targetSubnetName = "targetGeo"
 meshName = "mesh_name"
 texturePath = "texture_path" 
 
-geo = hou.pwd().node("../" + targetSubnetName)
+geo = hou.pwd().node("../" + targetSub  netName)
 texturePath += (meshName + "_")
 shopNetNode = geo.createNode("shopnet")
 
@@ -26,7 +26,7 @@ for childCount, childNet in enumerate(list(geo.children())):
     if childNet.name() == "object_merge1":
 
         groups = [g.name() for g in childNet.geometry().primGroups()]
-        print(childNet.geometry().primGroups())
+        #print(childNet.geometry().primGroups())
         for i, name in enumerate(groups):
             splitNode = geo.createNode("split")
             splitNode.parm("group").set(name)
