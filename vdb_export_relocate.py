@@ -8,7 +8,7 @@ targetMergeNodeName = "object_merge1"
 
 # Specify VDB Parameters
 vdbSmoothIteration = 2
-vdbSmoothOperation = "meancurvature" #Gaussian medianvalue meancurvature meanvalue laplacianflow
+vdbSmoothOperation = "meancurvature" #gaussian medianvalue meancurvature meanvalue laplacianflow
 vdbVoxelSize = 0.05
 vdbVoxelAdaptivity = 0.00001
 
